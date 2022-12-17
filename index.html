@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKIO | IT Consultant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a449bed0a.js" crossorigin="anonymous"></script>
+</head>
+<body class="tulisan_pertama" style="background-color: mintcream">
+
+
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg bg-light ps-5 pe-3" style="background-color: #0f3e6c !important">
+    <div class="container-fluid ps-5">
+        <i class="fa-solid fa-users-between-lines fa-2x text-white"> <a class="navbar-brand fw-bold" href="#" style="color:white">AKIO</a></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" style="color:white" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" style="color:white" href="#portofolio">PORTOFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" style="color:white" href="#blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" style="color:white" href="#about_us">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" style="color:white" href="#contact_us">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" style="color:white" href="todos.html">TODOS</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</nav>
+<!-- Jumbotron -->
+<div class="container-fluid p-0" style="background-color:mintcream">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Full screen modal -->
+            <div class="carousel-item active">
+                <img src="assets/1.png" class="d-block w-100" alt="foto 1">
+                <div class="carousel-caption d-none d-md-block row">
+                    <div class="col-lg-12 text-end">
+                        <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="assets/2.png" class="d-block w-100" alt="foto 2">
+                <div class="carousel-caption d-none d-md-block row">
+                    <div class="col-lg-12 text-end">
+                        <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="assets/3.png" class="d-block w-100" alt="foto 3">
+                <div class="carousel-caption d-none d-md-block row">
+                    <div class="col-lg-12 text-end">
+                        <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Package List</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Package</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Package A</td>
+                            <td>Rp. 4.000.000,-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Package B</td>
+                            <td>Rp. 3.000.000,-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Package C</td>
+                            <td>Rp. 2.000.000,-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PORTOFOLIO -->
+<div class="container-fluid p-5" style="background-color:mintcream" id="portofolio">
+    <div class="row">
+        <div class="col-lg-12 text-center text-capitalize">
+            <h2>PORTOFOLIO</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h4>We Specialize in Web Design / Development and Graphic Design</h4>
+        </div>
+    </div>
+    <div class="row pt-3 ps-3 pe-3 pb-0">
+        <div class="col-4">
+            <div class="card" >
+                <img src="assets/project1.png" class="card-img-top" alt="Project 1">
+                <div class="card-body bg-success text-white">
+                    <h4 class="card-title text-center">Project 1</h4>
+                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="text-center">
+                        <a class="btn btn-secondary btn-md" href="https://inpg-061-project2.netlify.app/" role="button" target="_blank">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" >
+                <img src="assets/project2.png" class="card-img-top" alt="Project 2">
+                <div class="card-body bg-warning text-white">
+                    <h4 class="card-title text-center">Project 2</h4>
+                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="text-center">
+                        <a class="btn btn-secondary btn-md" href="https://inpg-061-project2.netlify.app/portofolio.html" role="button" target="_blank">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" >
+                <img src="assets/project3.png" class="card-img-top" alt="Project 3">
+                <div class="card-body bg-primary text-white">
+                    <h4 class="card-title text-center">Project 3</h4>
+                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="text-center">
+                        <a class="btn btn-secondary btn-md" href="https://inpg-061-ariajaka.netlify.app/" role="button" target="_blank">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BLOG -->
+<div class="container-fluid p-5" style="background-color:mintcream" id="blog">
+    <div class="row">
+        <div class="col-lg-12 text-center text-capitalize">
+            <h2>BLOG</h2>
+        </div>
+    </div>
+    <div class="row pt-3 ps-3 pe-3 pb-0">
+        <div class="col-4">
+            <div class="card">
+                <img src="assets/laravel.png" class="card-img-top" alt="Laravel">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Laravel</h5>
+                    <p class="card-text text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <a href="https://laravel.com" class="btn btn-primary float-start" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <img src="assets/codeigniter.png" class="card-img-top" alt="Codeigniter">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Codeigniter</h5>
+                    <p class="card-text text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <a href="https://codeigniter.com" class="btn btn-primary float-start" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <img src="assets/yii.png" class="card-img-top" alt="Yii">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Yii Framework</h5>
+                    <p class="card-text text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <a href="https://yiiframework.com" class="btn btn-primary float-start" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Us -->
+<div class="container-fluid p-5" style="background-color:mintcream" id="about_us">
+    <div class="row pt-3 ps-3 pe-3 pb-0">
+        <div class="col-lg-12 text-center text-capitalize">
+            <h2>ABOUT US</h2>
+        </div>
+    </div>
+    <div class="row pt-3 ps-3 pe-3 pb-0">
+        <div class="col-6">
+            <h5 class="card-title text-start">AKIO</h5>
+            <h6 class="card-title text-start">IT Consultant</h6><br>
+            <p class="card-text text-start text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>   
+        </div>
+        <div class="col-6">
+            <div style="text-align: center;">
+                <i class="fa-solid fa-cubes fa-10x"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Us -->
+<div class="container-fluid p-5 text-white" style="background-color:#0f3e6c" id="contact_us">
+    <div class="row pt-3 ps-3 pe-3 pb-3">
+        <div class="col-lg-12 text-center text-capitalize">
+            <h2>CONTACT US</h2>
+        </div>
+    </div>
+    <div class="row pt-3 ps-3 pe-3 pb-0">
+        <div class="col-lg-3 text-start">
+            <h5 class="text-start">Jakarta Head Office</h5>
+            <p class="card-text text-start text-break">
+                Ruko Berlian Regensi Blok A - 10, <br>
+                Jalan H. Wahab Kebon Jeruk,<br>
+                Jakarta Pusat 11456<br>
+                Telp: 021-5432-6666
+            </p>   
+        </div>
+        <div class="col-lg-2 text-start"></div>
+        <div class="col-3">
+            <h5 class="text-start">Whatsapp :</h5>
+            Admin 1 <i class="fa-brands fa-whatsapp fa-1x"></i> 08127753457 <br>
+            Admin 2 <i class="fa-brands fa-whatsapp fa-1x"></i> 08191263317 <br>
+            Admin 3 <i class="fa-brands fa-whatsapp fa-1x"></i> 08527754787 <br>
+        </div>
+        <div class="col-lg-1 text-start"></div>
+        <div class="col-3">
+            <h5>Follow us on :</h5> 
+            <i class="fa-brands fa-facebook fa-1x"></i> 
+            <i class="fa-brands fa-instagram fa-1x"></i>
+            <i class="fa-brands fa-twitter fa-1x"></i>
+            <i class="fa-brands fa-youtube fa-1x"></i> akio_itconsultant
+        </div>
+    </div>
+    <div class="row pt-3 ps-3 pe-3 pb-0">
+        <div class="col-lg-12 text-start">
+            <h5 class="text-start">Palembang Office</h5>
+            <p class="card-text text-start text-break">
+                Ruko PTC Blok K-26, Jalan R. Sukamto<br>
+                Sekip Ujung, Palembang 36127<br>
+                Telp: 0711-357-201
+            </p>   
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="row p-2 m-0" style="position:fixed; left: 0; bottom: 0; width: 100%; background-color: #0f3e6c; color: white; text-align: center;">
+    <div class="col-12">Copyright &copy; 2022. All Rights Reserved </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

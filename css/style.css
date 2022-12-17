@@ -1,0 +1,10 @@
+.tulisan_pertama {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Source Sans Pro',sans-serif; */
+    font-style: normal;
+}
+#country{
+    text-transform: uppercase;
+    color: crimson;
+}
